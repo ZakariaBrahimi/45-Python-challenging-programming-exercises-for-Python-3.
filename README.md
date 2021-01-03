@@ -6,6 +6,6 @@ Write a program that calculates and prints the value according to the given form
 ```python
 >>>import math
 user_input = input("Enter a comma-separated sequence : ").split(",")
-result = [str(math.floor(math.sqrt(((2*50*int(x))/30)))) for x in user_input]
+result = [str(math.round(math.sqrt(((2*50*float(x))/30)))) for x in user_input]
 print(','.join(result))
 ````
