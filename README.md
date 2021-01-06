@@ -11,6 +11,7 @@ print(','.join(result))
 ````
 ### Question 2:
 Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array. The element value in the i-th row and j-th column of the array should be i*j. Note: i=0,1.., X-1; j=0,1,¡­Y-1. Example Suppose the following inputs are given to the program: 3,5 Then, the output of the program should be: [[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
+##### Solution
 ```python
 demensions = input().split(",")
 column = int(demensions[0])
@@ -23,6 +24,7 @@ print(multilist)
 ```
 ### Question 3:
 Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically. Suppose the following input is supplied to the program: without,hello,bag,world Then, the output should be: bag,hello,without,world
+##### Solution
 ```python
 user_input = input("Enter a comma separated sequence of words : ").split(",")
 user_input.sort()
