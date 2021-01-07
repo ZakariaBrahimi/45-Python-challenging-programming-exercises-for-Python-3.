@@ -55,3 +55,14 @@ Write a program that accepts a sequence of whitespace separated words as input a
 user_input = list(set(input('Enter a sequence of whitespace separated words : ').split(" ")))
 print(' '.join(sorted(user_input)))
 ```
+### Question 6:
+Write a program which accepts a sequence of comma separated 4 digit binary numbers as its input and then check whether they are divisible by 5 or not. The numbers that are divisible by 5 are to be printed in a comma separated sequence. Example: 0100,0011,1010,1001 Then the output should be: 1010 Notes: Assume the data is input by console.
+#### Solution
+```python
+user_input = [x for x in input("Enter a sequence of comma separated 4 digit binary numbers : ").split(",")]
+result = list()
+for element in user_input:
+    if (int(element, 2)) % 5 == 0:
+        result.append(element)
+print(",".join(result))
+```
