@@ -30,3 +30,21 @@ user_input = input("Enter a comma separated sequence of words : ").split(",")
 user_input.sort()
 print(",".join(user_input))
 ```
+### Question 4:
+Question£º Write a program that accepts sequence of lines as input and prints the lines after making all characters in the sentence capitalized. Suppose the following input is supplied to the program: Hello world Practice makes perfect Then, the output should be: HELLO WORLD PRACTICE MAKES PERFECT
+**solution**
+```python
+lines = list()
+i = 1
+print("______Press Enter to Exit.______")
+print("")
+while True:
+    user_input = input(f"Enter line number {i} : ")
+    i += 1
+    if user_input:
+        lines.append(user_input.upper())
+    else:
+        break
+for k in range(len(lines)):
+    print(lines[k])
+```
