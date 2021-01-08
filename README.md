@@ -82,13 +82,13 @@ Write a program that accepts a sentence and calculate the number of letters and 
 #### Solution
 ```python 
 user_input = input("Enter a sentence : ").split(" ")
-letter_length = 0
-digit_length = 0
+letters_number = 0
+digits_number = 0
 for word in user_input:
     for i in word:
         if i.isdigit():
-            digit_length += 1
+            digits_number += 1
         if i.isalpha():
-            letter_length += 1
+            letters_numbers += 1
 print(f"LETTERS {letter_length} DIGITS {digit_length}")
 ```
