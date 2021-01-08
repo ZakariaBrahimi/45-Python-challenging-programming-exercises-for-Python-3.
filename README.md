@@ -66,7 +66,7 @@ for element in user_input:
         result.append(element)
 print(",".join(result))
 ```
-### Question 6:
+### Question 7:
 Write a program, which will find all such numbers between 1000 and 3000 (both included) such that each digit of the number is an even number. The numbers obtained should be printed in a comma-separated sequence on a single line.
 #### Solution
 ```python
