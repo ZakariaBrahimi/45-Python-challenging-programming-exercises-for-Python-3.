@@ -77,3 +77,18 @@ for element in range(1000, 3001):
         result.append(to_string)
 print(",".join(result))
 ```
+### Question 8:
+Write a program that accepts a sentence and calculate the number of letters and digits. Suppose the following input is supplied to the program: hello world! 123 Then, the output should be: LETTERS 10 DIGITS 3
+#### Solution
+```python 
+user_input = input("Enter a sentence : ").split(" ")
+letter_length = 0
+digit_length = 0
+for word in user_input:
+    for i in word:
+        if i.isdigit():
+            digit_length += 1
+        if i.isalpha():
+            letter_length += 1
+print(f"LETTERS {letter_length} DIGITS {digit_length}")
+```
