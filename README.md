@@ -93,3 +93,20 @@ for character in user_input:
         pass
 print(f"LETTERS : {letter_length}\nDIGITS : {digit_length}")
 ```
+### Question 9:
+Write a program that accepts a sentence and calculate the number of upper case letters and lower case letters. Suppose the following input is supplied to the program: Hello world! Then, the output should be: UPPER CASE 1 LOWER CASE 9
+#### Solution
+```python
+user_input = input("Enter a sentence : ")
+upper_letters = 0
+lower_letters = 0
+dict_result = {"upper_letters" : 0, "lower_letters" : 0}
+for character in user_input:
+    if character.isupper():
+        dict_result["upper_letters"] += 1
+    if character.islower():
+        dict_result["lower_letters"] += 1
+    else:
+        pass
+print("Uper case letters : ", dict_result["upper_letters"], "\n", "lower case letters : ", dict_result["lower_letters"])
+```
