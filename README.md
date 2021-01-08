@@ -108,5 +108,5 @@ for character in user_input:
         dict_result["lower_letters"] += 1
     else:
         pass
-print("Uper case letters : ", dict_result["upper_letters"], "\n", "lower case letters : ", dict_result["lower_letters"])
+print(f"Uper case letters : {dict_result['upper_letters']}\nlower case letters : {dict_result['lower_letters']}")
 ```
