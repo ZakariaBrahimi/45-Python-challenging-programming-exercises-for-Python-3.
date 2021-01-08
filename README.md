@@ -90,5 +90,7 @@ for word in user_input:
             digits_number += 1
         if i.isalpha():
             letters_numbers += 1
+        else:
+            pass
 print(f"LETTERS {letter_length} DIGITS {digit_length}")
 ```
