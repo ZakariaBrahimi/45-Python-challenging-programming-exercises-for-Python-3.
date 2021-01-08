@@ -80,17 +80,16 @@ print(",".join(result))
 ### Question 8:
 Write a program that accepts a sentence and calculate the number of letters and digits. Suppose the following input is supplied to the program: hello world! 123 Then, the output should be: LETTERS 10 DIGITS 3
 #### Solution
-```python 
-user_input = input("Enter a sentence : ").split(" ")
-letters_number = 0
-digits_number = 0
-for word in user_input:
-    for i in word:
-        if i.isdigit():
-            digits_number += 1
-        if i.isalpha():
-            letters_numbers += 1
-        else:
-            pass
-print(f"LETTERS {letter_length} DIGITS {digit_length}")
+```python
+user_input = input("Enter a sentence : ")
+letter_length = 0
+digit_length = 0
+for character in user_input:
+    if character.isdigit():
+        digit_length += 1
+    if character.isalpha():
+        letter_length += 1
+    else:
+        pass
+print(f"LETTERS : {letter_length}\nDIGITS : {digit_length}")
 ```
