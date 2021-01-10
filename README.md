@@ -110,3 +110,14 @@ for character in user_input:
         pass
 print(f"Uper case letters : {dict_result['upper_letters']}\nlower case letters : {dict_result['lower_letters']}")
 ```
+### Question 10:
+Write a program that computes the value of a+aa+aaa+aaaa with a given digit as the value of a. Suppose the following input is supplied to the program: 9 Then, the output should be: 11106
+#### Solution
+```python
+user_input = input("Enter a Number (1-9) : ")
+items_list = [user_input, user_input+user_input, user_input+user_input+user_input, user_input+user_input+user_input+user_input]
+result = 0
+for i in items_list:
+    result += int(i)
+print(result)
+```
