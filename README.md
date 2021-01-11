@@ -129,3 +129,17 @@ num_list = input("Enter a sequence of comma-separated numbers : ").split(",")
 result = [x for x in num_list if int(x)%2==1]
 print(",".join(result))
 ```
+### Question 12:
+Write a program that computes the net amount of a bank account based a transaction log from console input. The transaction log format is shown as following: D 100 W 200
+D means deposit while W means withdrawal. Suppose the following input is supplied to the program: D 300 D 300 W 200 D 100 Then, the output should be: 500
+#### Solution
+```python
+user_input = input().split(" ")
+account_balance = 0
+for i in range(0, len(user_input),2):
+    if (user_input[i] == "D"):
+        account_balance += int(user_input[i+1])
+    elif (user_input[i] == "W"):
+        account_balance -= int(user_input[i+1])
+print(f"Your Account Balance : {account_balance}")
+```
