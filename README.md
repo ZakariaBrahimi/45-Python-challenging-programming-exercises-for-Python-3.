@@ -134,6 +134,7 @@ Write a program that computes the net amount of a bank account based a transacti
 D means deposit while W means withdrawal. Suppose the following input is supplied to the program: D 300 D 300 W 200 D 100 Then, the output should be: 500
 #### Solution
 ```python
+# Try : ===>> D 300 D 300 W 200 D 100
 user_input = input().split(" ")
 account_balance = 0
 for i in range(0, len(user_input),2):
