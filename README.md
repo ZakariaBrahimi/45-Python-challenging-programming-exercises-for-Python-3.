@@ -155,7 +155,7 @@ Minimum length of transaction password: 6
 Maximum length of transaction password: 12
 Your program should accept a sequence of comma separated passwords and will check them according to the above criteria. Passwords that match the criteria are to be printed, each separated by a comma. Example If the following passwords are given as input to the program: ABd1234@1,a F1#,2w3E*,2We3345 Then, the output of the program should be: ABd1234@1
 ```python
-# Doesn't solved yet
+# Almost Done
 import re
 user_input = input("Enter a sequence of comma separated passwords : ").split(",")
 pattern = r"[a-zA-Z0-9]{6,12}" # here is the problem ====>> [$#@]
@@ -165,4 +165,17 @@ for password in user_input:
         print(password)
     else:
         pass
+```
+### Question 14:
+You are required to write a program to sort the (name, age, height) tuples by ascending order where name is string, age and height are numbers. The tuples are input by console. The sort criteria is: 1: Sort based on name; 2: Then sort based on age; 3: Then sort by score. The priority is that name > age > score. If the following tuples are given as input to the program: Tom,19,80 John,20,90 Jony,17,91 Jony,17,93 Json,21,85 Then, the output of the program should be: [('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]
+#### Solution
+```python
+result = list()
+while True:
+    user_input = input("Enter the (name, age, height) : ")
+    if user_input:
+        result.append(tuple(user_input.split(",")))
+    else:
+        break
+print(sorted(result))
 ```
