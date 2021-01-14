@@ -179,3 +179,17 @@ while True:
         break
 print(sorted(result))
 ```
+### Question 15:
+Define a class with a generator which can iterate the numbers, which are divisible by 7, between a given range 0 and n.
+#### Solution
+```python
+# We used class Method not Instance Method
+class MyGenerator:
+    @classmethod
+    def __init__(cls, n):
+        cls.n = n
+        cls.result = [x for x in range(n) if x % 7 == 0]
+        print(cls.result)
+user_input = int(input("Enter a Number : "))
+MyGenerator(user_input)
+```
