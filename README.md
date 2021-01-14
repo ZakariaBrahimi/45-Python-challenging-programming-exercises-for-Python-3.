@@ -181,15 +181,21 @@ print(sorted(result))
 ```
 ### Question 15:
 Define a class with a generator which can iterate the numbers, which are divisible by 7, between a given range 0 and n.
+- To learn more about Python Generators : - [Introduction To python Generators](https://realpython.com/introduction-to-python-generators/)
+                                          - [Expert Python Tutorial #5 - Generators](https://www.youtube.com/watch?fbclid=IwAR0S5T8bCwG3T4hJ1vupogRUanhb917pVXDQY2rDu53j5EtY8Zb4MZeloSM&v=2eiFCQ-YAf4&feature=youtu.be)
 #### Solution
 ```python
-# We used class Method not Instance Method
-class MyGenerator:
-    @classmethod
-    def __init__(cls, n):
-        cls.n = n
-        cls.result = [x for x in range(n) if x % 7 == 0]
-        print(cls.result)
 user_input = int(input("Enter a Number : "))
-MyGenerator(user_input)
+#using a Normal Python Generators
+def generator(n):
+    for i in range(n):
+        if i % 7 == 0:
+            yield i
+# g = generator(user_input)
+# for i in g:
+#     print(i)
+#using generator expression (also called a generator comprehension)
+result = (x for x in range(user_input) if x % 7 == 0)
+for i in result:
+    print(i)
 ```
