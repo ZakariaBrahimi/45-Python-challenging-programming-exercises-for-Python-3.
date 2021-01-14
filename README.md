@@ -212,3 +212,18 @@ position = [right-left, up-down]
 print(position)
 print(round(math.sqrt(position[0]**2 + position[1]**2)))
 ```
+### Question 17:
+Write a program to compute the frequency of the words from the input. The output should output after sorting the key alphanumerically. Suppose the following input is supplied to the program: New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3. Then, the output should be: 2:2 3.:1 3?:1 New:1 Python:5 Read:1 and:1 between:1 choosing:1 or:2 to:1
+#### Solution
+```python
+user_input = input().split(" ")
+dic = dict()
+result = dict()
+for item in user_input:
+    frequency = user_input.count(item)
+    dic[item] = frequency
+sorted_keys = sorted(dic.keys())
+for key in sorted_keys:
+    result[key] = dic[key]
+print(result)
+```
