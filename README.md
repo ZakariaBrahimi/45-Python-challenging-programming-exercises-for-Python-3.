@@ -227,3 +227,12 @@ for key in sorted_keys:
     result[key] = dic[key]
 print(result)
 ```
+### Question 18:
+Write a method which can calculate square value of number
+#### Solution
+```python
+def square(n):
+    return n**2
+value = int(input("Enter a Number : "))
+print(square(value))
+```
