@@ -280,3 +280,11 @@ def sum_of_two_num(a, b):
     return a+b
 print(sum_of_two_num(2, 4))
 ```
+### Question 22:
+Define a function that can convert a integer into a string and print it in console.
+#### Solution
+```python
+def int_to_str(n):
+    return str(n)
+print(int_to_str(5)+"5")
+```
