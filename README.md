@@ -272,3 +272,11 @@ print(f"Class parameter : {MyClass.number}")
 obj = MyClass(30)
 print(f"Instance parameter : {obj.number}")
 ```
+### Question 21:
+Define a class, which have a class parameter and have a same instance parameter.
+#### Solution 
+```python
+def sum_of_two_num(a, b):
+    return a+b
+print(sum_of_two_num(2, 4))
+```
