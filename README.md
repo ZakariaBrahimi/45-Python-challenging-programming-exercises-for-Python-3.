@@ -297,3 +297,13 @@ def sum_two_str(n, m):
     print(int(n) + int(m))
 sum_two_str("5", "5")
 ```
+### Question 24:
+Define a function that can accept two strings as input and concatenate them and then print it in console.
+#### Solution
+```python
+def concatenate_two_str(n, m):
+    print(n+m)
+str_1 = input("Enter first String : ")
+str_2 = input("Enter second String : ")
+concatenate_two_str(str_1, str_2)
+```
