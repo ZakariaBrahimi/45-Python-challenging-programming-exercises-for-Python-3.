@@ -259,7 +259,7 @@ print(doc(FuncDoc()))
 ```
 ### Question 20:
 Define a class, which have a class parameter and have a same instance parameter.
-Hints: Define a instance parameter, need add it in init method You can init a object with construct parameter or set the value later
+**Hints**: Define a instance parameter, need add it in init method You can init a object with construct parameter or set the value later
 #### Solution
 ```python
 class MyClass:
