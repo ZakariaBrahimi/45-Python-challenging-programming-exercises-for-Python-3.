@@ -289,3 +289,11 @@ def int_to_str(n):
 print(int_to_str(5)+"5")
 print(type(int_to_str(3)))
 ```
+### Question 23:
+Define a function that can receive two integral numbers in string form and compute their sum and then print it in console.
+#### Solution
+```python
+def sum_two_str(n, m):
+    print(int(n) + int(m))
+sum_two_str("5", "5")
+```
