@@ -287,4 +287,5 @@ Define a function that can convert a integer into a string and print it in conso
 def int_to_str(n):
     return str(n)
 print(int_to_str(5)+"5")
+print(type(int_to_str(3)))
 ```
