@@ -257,3 +257,17 @@ class FuncDoc:
         """
 print(doc(FuncDoc()))
 ```
+### Question 20:
+Define a class, which have a class parameter and have a same instance parameter.
+#### Solution
+```python
+class MyClass:
+    #class parameter 
+    number = 0
+    def __init__(self, number):
+        # instance parameter
+        self.number = number
+print(f"Class parameter : {MyClass.number}")
+obj = MyClass(30)
+print(f"Instance parameter : {obj.number}")
+```
