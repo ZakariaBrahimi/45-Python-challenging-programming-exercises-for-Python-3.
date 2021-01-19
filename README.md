@@ -343,3 +343,15 @@ def square_dictionary():
         print(f'{key} : {value}')
 square_dictionary()
 ```
+### Question 28:
+Define a function which can print a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys.
+#### Solution
+```python
+def square_dictionary():
+    my_dictionary = dict()
+    for element in range(1, 21):
+        my_dictionary[element] = element**2
+    for (key, value) in my_dictionary.items():
+        print(f'{key} : {value}')
+square_dictionary()
+```
