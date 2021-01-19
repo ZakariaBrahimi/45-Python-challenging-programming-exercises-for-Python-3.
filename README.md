@@ -320,3 +320,15 @@ def max_length(n, m):
         print(m)
 max_length('3000','50000')
 ```
+### Question 26:
+Define a function that can accept an integer number as input and print the "It is an even number" if the number is even, otherwise print "It is an odd number".
+#### Solution
+```python
+def even_or_odd(n):
+    if (n % 2 == 0):
+        print("It's Even.")
+    else:
+        print("It's Odd.")
+even_or_odd(4)
+even_or_odd(5)
+```
