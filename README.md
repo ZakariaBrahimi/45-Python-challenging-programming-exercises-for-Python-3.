@@ -367,3 +367,14 @@ def square_dictionary():
 		print(value)
 square_dictionary()
 ```
+### Question 30:
+Define a function which can generate and print a list where the values are square of numbers between 1 and 20 (both included).
+#### Solution
+``` python
+def print_sqrt_number():
+    result = []
+    for i in range(1, 21):
+        result.append(i**2)
+    print(result)
+print_sqrt_number()
+```
