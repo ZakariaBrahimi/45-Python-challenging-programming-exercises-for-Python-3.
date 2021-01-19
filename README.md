@@ -378,3 +378,15 @@ def print_sqrt_number():
     print(result)
 print_sqrt_number()
 ```
+### Question 31:
+Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the first 5 elements in the list.
+#### Solution
+```python
+def print_sqrt_number():
+    result = []
+    for i in range(1, 21):
+        result.append(i**2)
+    for i in range(0,5):
+        print(result[i])
+print_sqrt_number()
+```
