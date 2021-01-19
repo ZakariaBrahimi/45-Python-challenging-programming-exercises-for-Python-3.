@@ -399,3 +399,15 @@ def print_sqrt_number():
         result.append(i**2)
     print(result[-5:])
 print_sqrt_number()
+```
+### Question 32:
+Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print all values except the first 5 elements in the list.
+#### Solution
+```python
+def print_sqrt_number():
+    result = []
+    for i in range(1, 21):
+        result.append(i**2)
+    print(result[5:])
+print_sqrt_number()
+```
