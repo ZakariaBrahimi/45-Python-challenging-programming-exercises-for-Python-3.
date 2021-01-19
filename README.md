@@ -307,3 +307,16 @@ str_1 = input("Enter first String : ")
 str_2 = input("Enter second String : ")
 concatenate_two_str(str_1, str_2)
 ```
+### Question 25:
+Define a function that can accept two strings as input and print the string with maximum length in console. If two strings have the same length, then the function should print all strings line by line.
+#### Solution
+```python
+def max_length(n, m):
+    if (len(n) > len(m)):
+        print(n)
+    elif (len(n) == len(m)):
+        print(f'{n}\n{m}')
+    else:
+        print(m)
+max_length('3000','50000')
+```
