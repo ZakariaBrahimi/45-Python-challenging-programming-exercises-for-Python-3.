@@ -332,3 +332,14 @@ def even_or_odd(n):
 even_or_odd(4)
 even_or_odd(5)
 ```
+### Question 27:
+Define a function which can print a dictionary where the keys are numbers between 1 and 3 (both included) and the values are square of keys.
+#### Solution
+```python
+def square_dictionary():
+    my_dictionary = {1:1, 2:4, 3:9}
+    m = dict()
+    for (key, value) in my_dictionary.items():
+        print(f'{key} : {value}')
+square_dictionary()
+```
