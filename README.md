@@ -430,3 +430,12 @@ tpl = (1,2,3,4,5,6,7,8,9,10)
 print(tpl[:5])
 print(tpl[5:])
 ```
+### Question 35:
+Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No".
+```python
+user_input = input()
+if user_input.lower() == "yes":
+    print("Yes")
+else:
+    print("No")
+```
