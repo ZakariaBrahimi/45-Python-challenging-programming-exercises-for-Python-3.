@@ -503,3 +503,15 @@ newYorker_obj = NewYorker()
 print(american_obj)
 print(newYorker_obj)
 ```
+### Question 42:
+Define a class named Circle which can be constructed by a radius. The Circle class has a method which can compute the area.
+#### Solution
+```python
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+    def area(self):
+        return 3.14*(self.radius**2)
+obj = Circle(2)
+print(obj.area())
+```
