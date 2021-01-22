@@ -490,3 +490,16 @@ obj = American()
 obj.printNationality()
 American.printNationality()
 ```
+### Question 41:
+Define a class named American and its subclass NewYorker.
+#### Solution
+```python
+class American:
+    pass
+class NewYorker(American):
+    pass
+american_obj = American()
+newYorker_obj = NewYorker()
+print(american_obj)
+print(newYorker_obj)
+```
