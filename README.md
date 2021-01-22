@@ -432,10 +432,23 @@ print(tpl[5:])
 ```
 ### Question 35:
 Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No".
+#### Solution
 ```python
 user_input = input()
 if user_input.lower() == "yes":
     print("Yes")
 else:
     print("No")
+```
+### Question 36:
+Write a program which can filter even numbers in a list by using filter function. The list is: [1,2,3,4,5,6,7,8,9,10].
+#### Solution
+```python
+my_list = [1,2,3,4,5,6,7,8,9,10]
+def filter_even_numbers(x):
+    if x % 2 == 0:
+        return x
+result = filter(lambda x: x%2==0, my_list)
+print(result)
+print(set(result)
 ```
