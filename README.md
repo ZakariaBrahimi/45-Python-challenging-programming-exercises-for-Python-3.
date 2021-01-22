@@ -478,3 +478,15 @@ result = filter(lambda x: x%2==0, range(1, 21))
 print(result)
 print(list(result))
 ```
+### Question 40:
+Define a class named American which has a static method called printNationality.
+#### Solution
+```python
+class American:
+    @staticmethod
+    def printNationality():
+        print("America")
+obj = American()
+obj.printNationality()
+American.printNationality()
+```
