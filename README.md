@@ -546,3 +546,9 @@ class Square(Shape):
 square_obj = Square(3)
 square_obj.area()
 ```
+### Question 45:
+Please raise a RuntimeError exception.
+#### Solution
+```python
+raise RuntimeError("it's RuntimeError something wrong")
+```
