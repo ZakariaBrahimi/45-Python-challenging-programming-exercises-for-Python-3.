@@ -461,3 +461,12 @@ result = map(lambda x: x**2, my_list)
 print(result)
 print(list(result))
 ```
+### Question 38:
+Write a program which can map() and filter() to make a list whose elements are square of even number in [1,2,3,4,5,6,7,8,9,10].
+#### Solution
+```python
+my_list = [1,2,3,4,5,6,7,8,9,10]
+result = map(lambda x: x**2, filter(lambda x: x%2==0, my_list))
+print(result)
+print(list(result))
+```
